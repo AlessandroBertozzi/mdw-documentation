@@ -1,0 +1,1050 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+        <link rel="next" href="../advancedSearch/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.10">
+    
+    
+      
+        <title>Search - Muruca Middleware Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configsearch" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="../.." title="Muruca Middleware Documentation" class="md-header__button md-logo" aria-label="Muruca Middleware Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Muruca Middleware Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Search
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../about/" class="md-tabs__link">
+        
+  
+    
+  
+  About
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+    
+  
+  Getting started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+  Documentation
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../contact/" class="md-tabs__link">
+        
+  
+    
+  
+  Contact
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Muruca Middleware Documentation" class="md-nav__button md-logo" aria-label="Muruca Middleware Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Muruca Middleware Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Documentation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Documentation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Interfaces
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Interfaces
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Search
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Search
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConfigSearch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchstruct" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchStruct
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SearchStruct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searchaggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchAggregation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searchfilter" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchFilter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rangeaggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      RangeAggregation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchresults" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchResults
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advancedSearch/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced search
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configsearch" class="md-nav__link">
+    <span class="md-ellipsis">
+      ConfigSearch
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchstruct" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchStruct
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SearchStruct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#searchaggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchAggregation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searchfilter" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchFilter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rangeaggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      RangeAggregation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchresults" class="md-nav__link">
+    <span class="md-ellipsis">
+      SearchResults
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>Search</h1>
+
+<p>L’endpoint <code>/search/results</code> recupera i dati tramite una chiamata Elasticsearch. Per costruire la query di Elasticsearch la funzione <code>buildQuery</code>  utilizza una configurazione. La libreria di base mette già una configurazione di default. Quest’ultima può essere sovrascritta per ottenere il risultato desiderato. Per costruire le proprie configurazioni è stata definita un’interfaccia che controlla la struttura del parametro in input alla  funzione <code>buildQuery</code>. Qui di seguito sono illustrate tutti i valori e le proprietà accettate in fase di definizione della configurazione.
+I principali componenti dell’interfaccia sono i seguenti:</p>
+<ul>
+<li><code>SearchStruct</code>: definisce una query di Elasticsearch. È possibile combinare dentro a questa interfaccia altri due componenti qui sotto elencati: <code>searchAggregation</code> e <code>SearchFilter</code>.</li>
+<li><code>SearchAggregation</code>: definisce le aggregazioni che possono essere aggiunte dentro alla query di <code>SearchStruct</code>.</li>
+<li><code>SearchFilter</code>: definisce i filtri che possono essere aggiunti dentro alla query di <code>SearchStruct</code>.</li>
+<li><code>RangeAggregation</code>: un componente che può essere utilizzato dentro a Search Aggregation.</li>
+<li><code>SearchResults</code>: insieme alla <code>SearchStruct</code> è un’altra configurazione accettata per la search. In questo caso è utilizzata per quali valori e label debbano essere utilizzate per ritornare i dati all’utente.</li>
+</ul>
+<h3 id="configsearch">ConfigSearch</h3>
+<p>Questa interfaccia funge da principale punto di ingresso per la configurazione delle impostazioni di ricerca. Consente la specifica dinamica delle chiavi di ricerca e delle relative configurazioni.</p>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Opzionale</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>key: string</code></td>
+<td><code>SearchStruct</code> | <code>SearchResults[]</code></td>
+<td>No</td>
+<td>il valore è un <code>SearchStruct</code> o un array di <code>SearchResults</code>. La chiave speciale "results" configura le impostazioni dei risultati.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="searchstruct">SearchStruct</h3>
+<p>Definisce la struttura di una query di ricerca, inclusa la query base, l'ordinamento, le query specifiche per lingua, le opzioni per filtrare i risultati, le impostazioni di aggregazione per le faccette e i filtri da applicare alla query.</p>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Opzionale</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>base_query</td>
+<td><code>{</code><br/> <code>field?: string;</code> <br/> <code>value?: string;</code> <br/> <code>}</code></td>
+<td>Sì</td>
+<td>Configurazione della query base di Elasticsearch. Il <code>value</code> indica il valore del <code>field</code> sui cui fare un match all'interno dell'indice Elastic.</td>
+</tr>
+<tr>
+<td>sort</td>
+<td><code>string[]</code></td>
+<td>No</td>
+<td>Serve per indicare a Elasticsearch su quali campi fare un riordino dei risultati.</td>
+</tr>
+<tr>
+<td>lang</td>
+<td><code>{</code> <br/> <code>query: {</code> <br/> <code>type: string;</code> <br/> <code>field: string;</code> <br/> <code>};}</code></td>
+<td>No</td>
+<td>...</td>
+</tr>
+<tr>
+<td>options</td>
+<td><code>{</code> <br/> <code>exclude?: string[];</code> <br/> <code>include?: string[];</code> <br/> <code>}</code></td>
+<td>Sì</td>
+<td>Impostazioni opzionali per escludere o includere campi specifici nel risultato.</td>
+</tr>
+<tr>
+<td>facets-aggs</td>
+<td><code>{</code> <br/> <code>type: 'obj';</code> <br/> <code>aggregations: {</code> <br/> <code>[key: string]:</code> <br/>  <code>SearchAggregation;};}</code></td>
+<td>No</td>
+<td>Serve per definire come Elasticsearch deve gestire le aggregazione dei dati ritornati.</td>
+</tr>
+<tr>
+<td>filters</td>
+<td><code>{</code> <br/> <code>[key: string]: SearchFilter;</code> <br/> <code>}</code></td>
+<td>No</td>
+<td>Filtri da applicare alla query Elasticsearch.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="searchaggregation">SearchAggregation</h4>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Opzionale</th>
+<th>Descrizione</th>
+<th>Esempi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nested</td>
+<td><code>boolean</code></td>
+<td>No</td>
+<td>Indica se l'aggregazione è fatta su un campo nidificato.</td>
+<td></td>
+</tr>
+<tr>
+<td>nestedFields</td>
+<td><code>string[]</code></td>
+<td>Sì</td>
+<td>Elenca i campi genitore di un campo nidificato, applicabile solo se nested è true.</td>
+<td></td>
+</tr>
+<tr>
+<td>search</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>Il campo da utilizzare per l'aggregazione.</td>
+<td></td>
+</tr>
+<tr>
+<td>title</td>
+<td><code>string</code></td>
+<td>No</td>
+<td>Il campo da visualizzare come etichetta per l'aggregazione.</td>
+<td></td>
+</tr>
+<tr>
+<td>sort</td>
+<td><code>term</code></td>
+<td>Sì</td>
+<td>Ordinamento opzionale per i termini dell'aggregazione, impostato su 'term' per un ordinamento alfabetico.</td>
+<td></td>
+</tr>
+<tr>
+<td>sortValues</td>
+<td><code>string[]</code></td>
+<td>Sì</td>
+<td>Ordinamento manuale per le faccette, specificato come un array di stringhe.</td>
+<td></td>
+</tr>
+<tr>
+<td>innerFilterField</td>
+<td><code>string[]</code></td>
+<td>Sì</td>
+<td>Campi utilizzati per la ricerca all'interno di una faccetta, applicabile per filtraggi di faccette più complessi.</td>
+<td></td>
+</tr>
+<tr>
+<td>generalFilter</td>
+<td><code>{</code> <br/> <code>fields: string[];</code> <br/> <code>value: string;</code> <br/> <code>}</code></td>
+<td>Sì</td>
+<td>Filtro generale applicato all'aggregazione, specificando i campi su cui filtrare e il valore del filtro.</td>
+<td></td>
+</tr>
+<tr>
+<td>extra</td>
+<td><code>{</code> <br/> <code>[key: string]:</code> <br/> <code>string;</code> <br/>  <code>}</code></td>
+<td>Sì</td>
+<td>Oggetto contenente proprietà extra da includere nella risposta, definite come coppie chiave-valore.</td>
+<td></td>
+</tr>
+<tr>
+<td>ranges</td>
+<td><code>RangeAggregation[]</code></td>
+<td>Sì</td>
+<td>Definisce un insieme di intervalli per le aggregazioni, ognuno specificato da un valore di inizio e fine.</td>
+<td></td>
+</tr>
+<tr>
+<td>global</td>
+<td><code>boolean</code></td>
+<td>Sì</td>
+<td>Indica se l'aggregazione è globale, non basata sulla query corrente.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="searchfilter">SearchFilter</h4>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Opzionale</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td><code>'fulltext'</code> | <code>'multivalue'</code> | <code>'range'</code></td>
+<td>No</td>
+<td>Tipo di filtro, può essere "fulltext" per una ricerca libera, "multivalue" per una faccetta o "range" per una ricerca basata su intervalli.</td>
+</tr>
+<tr>
+<td>addStar</td>
+<td><code>boolean</code></td>
+<td>Sì</td>
+<td>Flag opzionale per aggiungere caratteri jolly all'inizio e alla fine del termine di ricerca.</td>
+</tr>
+<tr>
+<td>field</td>
+<td><code>string</code> | <code>string[]</code></td>
+<td>No</td>
+<td>Specifica il/i campo/i su cui effettuare la query.</td>
+</tr>
+<tr>
+<td>operator</td>
+<td><code>'OR'</code> | <code>'AND'</code></td>
+<td>Sì</td>
+<td>Operatore logico da usare nel filtro, di default è "AND" se non specificato.</td>
+</tr>
+<tr>
+<td>nested</td>
+<td><code>boolean</code></td>
+<td>Sì</td>
+<td>Indica se il filtro è su un campo nidificato, richiedendo configurazioni aggiuntive per i campi nidificati.</td>
+</tr>
+<tr>
+<td>nestedFields</td>
+<td><code>string[]</code></td>
+<td>Sì</td>
+<td>Elenca i campi genitore di un campo nidificato, applicabile solo se nested è true.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="rangeaggregation">RangeAggregation</h4>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Opzionale</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>from</td>
+<td><code>number</code></td>
+<td>No</td>
+<td>Il valore di inizio dell'intervallo per l'aggregazione.</td>
+</tr>
+<tr>
+<td>to</td>
+<td><code>number</code></td>
+<td>No</td>
+<td>Il valore di fine dell'intervallo per l'aggregazione.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="searchresults">SearchResults</h3>
+<table>
+<thead>
+<tr>
+<th>Proprietà</th>
+<th>Tipo</th>
+<th>Opzionale</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td><code>title</code> | <code>text</code> | <code>metadata</code> | <code>highlights</code> | <code>id</code> | <code>link</code> | <code>image</code> | <code>routeId</code> | <code>slug</code></td>
+<td>No</td>
+<td>Specifica il tipo di etichetta da mostrare nell'elenco dei risultati, come 'titolo', 'testo', 'metadati', ecc.</td>
+</tr>
+<tr>
+<td>field</td>
+<td><code>string</code> | <code>string[]</code></td>
+<td>No</td>
+<td>Specifica il/i campo/i i cui valori dovrebbero essere restituiti, che possono variare in base al tipo di etichetta.</td>
+</tr>
+<tr>
+<td>max-char</td>
+<td><code>number</code></td>
+<td>Sì</td>
+<td>Proprietà opzionale che specifica il numero massimo di caratteri da restituire per il valore del campo, applicabile in alcuni casi.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
